@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_pages_tests",
+  "info": {
+    "name": "test",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "About"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "About": {
+      "type": "component",
+      "repeatable": false,
+      "component": "company.about"
+    }
+  }
+}

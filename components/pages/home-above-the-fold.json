@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_pages_home_above_the_folds",
+  "info": {
+    "name": "Home Above The Fold",
+    "icon": "bolt"
+  },
+  "options": {},
+  "attributes": {
+    "Headline": {
+      "type": "string"
+    },
+    "Subheading": {
+      "type": "string"
+    }
+  }
+}

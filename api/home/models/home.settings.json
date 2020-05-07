@@ -1,40 +1,36 @@
 {
   "kind": "singleType",
-  "collectionName": "pages",
+  "collectionName": "homes",
   "info": {
-    "name": "Home Page"
+    "name": "Home"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "slug": {
       "type": "string"
     },
-    "Headline": {
-      "type": "string"
-    },
-    "Subheading": {
-      "type": "text"
-    },
-    "Services": {
+    "Hero": {
       "type": "component",
-      "repeatable": true,
-      "component": "company.web-design"
-    },
-    "Values": {
-      "type": "component",
-      "repeatable": true,
-      "component": "company.values"
+      "repeatable": false,
+      "component": "pages.home-above-the-fold"
     },
     "About": {
       "type": "component",
       "repeatable": false,
       "component": "company.about"
+    },
+    "Values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "company.values"
+    },
+    "Services": {
+      "type": "component",
+      "repeatable": false,
+      "component": "company.web-design"
     }
   }
 }

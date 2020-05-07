@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pages_homes",
+  "info": {
+    "name": "Home",
+    "icon": "house-damage"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "About": {
+      "type": "component",
+      "repeatable": true,
+      "component": "company.about"
+    }
+  }
+}

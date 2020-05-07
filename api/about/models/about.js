@@ -1,8 +1,7 @@
 'use strict';
-const slugify = require('slugify');
 
 /**
- * Lifecycle callbacks for the `post` model.
+ * Lifecycle callbacks for the `about` model.
  */
 
 module.exports = {
@@ -53,16 +52,4 @@ module.exports = {
   // After destroying a value.
   // Fired after a `delete` query.
   // afterDestroy: async (model, attrs, options) => {}
-  beforeSave: async model => {
-    if (model.title) {
-      model.slug = slugify(model.title);
-    }
-  },
-  beforeUpdate: async model => {
-    if (model.getUpdate() && model.getUpdate().title) {
-      model.update({
-        slug: slugify(model.getUpdate().title),
-      });
-    }
-  },
 };
