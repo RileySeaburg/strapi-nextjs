@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Home Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "Headline": {
+      "type": "string"
+    },
+    "Subheading": {
+      "type": "text"
+    },
+    "Services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "company.web-design"
+    },
+    "Values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "company.values"
+    },
+    "About": {
+      "type": "component",
+      "repeatable": false,
+      "component": "company.about"
+    }
+  }
+}

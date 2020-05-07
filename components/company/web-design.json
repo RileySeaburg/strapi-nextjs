@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_services_web_designs",
+  "info": {
+    "name": "Services",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

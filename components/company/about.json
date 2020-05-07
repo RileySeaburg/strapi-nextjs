@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_company_abouts",
+  "info": {
+    "name": "About",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "Headline": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Picture": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
