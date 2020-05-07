@@ -4,8 +4,6 @@ import { useRouter } from 'next/router'
 
 function Navigation({navigation}) {
     const router = useRouter()
-    console.log(router)
-    
     return (
         <NavigationStyled>
            <ul>
@@ -16,13 +14,15 @@ function Navigation({navigation}) {
                    <Link href="/blog"><a className={router.pathname === '/blog' ? "active" : ''}>Blog</a></Link>
                </li>
                <li>
+                   <Link href="/services"><a className={router.pathname === '/services' ? "active" : ''}>Services</a></Link>
+               </li>
+               <li>
                    <Link href="/contact"><a className={router.pathname === '/contact' ? "active" : ''}>Contact</a></Link>
                </li>
            </ul>
         </NavigationStyled>
     )
 }
-
 const NavigationStyled = styled.div`
     ul {
         list-style: none;
